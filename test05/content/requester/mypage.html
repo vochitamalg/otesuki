@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>依頼者マイページ (ログイン後トップ) | otesuki</title>
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="http://---../../assets/img/icon/fb.png">
+	<meta property="og:url" content="http://---">
+	<meta property="og:type" content="article">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../../assets/img/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../../assets/img/icon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../../assets/img/icon/site.webmanifest">
+	<link rel="mask-icon" href="../../assets/img/icon/safari-pinned-tab.svg" color="#42b086">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+	<!--<meta name="viewport" content="width=1320"> -->
+
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
+	<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+	<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+	<script src="../../assets/js/drawer.js"></script>
+	<script src="../../assets/js/slick.min.js"></script>
+	<script src="../../assets/js/owl.carousel.js"></script>
+	<script src="../../assets/js/flatpickr.min.js"></script>
+	<script src="../../assets/js/ja.js"></script>
+	<script src="../../assets/js/remodal.min.js"></script>
+	<script src="../../assets/js/effect.js"></script>
+
+</head>
+
+<body class="drawer">
+
+<!-- ------------ ALL START ------------ -->
+
+<!-- classにコンテンツディレクトリを付与する -->
+<div id="container" class="otesuki_list">
+
+	<!-- ------------ HEADER START ------------ -->
+
+	<header class="mypage">
+
+		<div class="inner">
+
+			<!-- 会社名ロゴ -->
+			<h1>
+				<a href="/index.html">
+					<img src="../../assets/img/common/logo_tate.svg" alt="otesuki" class="hide_sp">
+					<img src="../../assets/img/common/logo_yoko.svg" alt="otesuki" class="hide_pc">
+				</a>
+			</h1>
+
+			<!-- ハンバーガーボタン -->
+			<button type="button" class="toggle hamburger">
+				<span class="mask"></span>
+				<span class="icon"></span>
+			</button>
+
+			<!-- ナビゲーション -->
+
+			<ul class="support">
+				<li class="people"><a href="/"><img src="../../assets/img/common/icon/icon_people.svg"></a></li>
+				<li class="mail"><a href="/"><img src="../../assets/img/common/icon/icon_mail.svg"><span class="number">1</span></a></li>
+				<li class="hide_sp"><a href="/content/search/index.html" class="btn small blue search"><span>お仕事検索</span></a></li>
+				<li class="hide_pc search"><a href="/"><img src="../../assets/img/common/icon/icon_search.svg"></a></li>
+			</ul>
+
+			<div class="nav_box">
+
+				<nav>
+
+					<div class="drawer_menu">
+						<ul class="item">
+							<li><a href="/content/requester/mypage.html" class="mypage"><span>マイページ</span></a></li>
+							<li><a href="/content/search/index.html" class="search"><span>支援者検索</span></a></li>
+							<li><a href="/content/helper/schedule/index.html" class="schedule"><span>スケジュール</span></a></li>
+							<li><a href="/content/helper/work/index.html" class="work"><span>おしごと一覧</span></a></li>
+						</ul>
+
+						<ul class="notification">
+							<li><a href="/content/login/index.html">ログイン</a></li>
+							<li><a href="/content/help.html">ヘルプ</a></li>
+							<li><a href="/content/contact/index.html">お問い合わせ</a></li>
+						</ul>
+
+					</div>
+
+				</nav>
+			</div>
+		</div>
+
+
+		<div class="header_list requester">
+			<div class="inner">
+				<ul>
+					<li class="active"><span>依頼者でログイン中</span></li>
+					<li>ニックネーム</a></li>
+					<li><a href="/content/requester/change/index.html" class="change">利用者情報変更</a></li>
+					<li><a href="/" class="switch"><span class="icon_switch"><span class="hide_sp">支援者に切り替え</span></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- ------------ HEADER END ------------ -->
+
+	<!-- パンくずリスト START -->
+	<div class="pan">
+
+		<div class="in">
+
+			<ul>
+				<li class="home"><a href="/index.html"></a></li>
+				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
+				<li>マイページ</li>
+			</ul>
+
+		</div>
+
+	</div>
+	<!-- パンくずリスト END -->
+
+
+	<!-- ------------ MAIN CONTENT START ------------ -->
+
+	<main role="main">
+
+		<section class="mypage_info">
+
+			<article>
+
+				<div class="inner">
+
+					<div class="area">
+						<h2>ニックネーム さんのマイページ</h2>
+
+						<div class="photo">
+							<img src="../../assets/img/content/article/profile.png">
+							<a href="/content/requester/profile/index.html">プロフィール<br class="hide_pc">変更</a>
+						</div>
+
+						<div class="point">
+							<h3>0000 point</h3>
+							<span>2017/00/00</span>
+							<span>失効予定のポイント: 000 point</span>
+
+							<ul>
+								<li><a href="/content/requester/point/buy.html" class="btn mini yellow">購入する</a></li>
+								<li><a href="/content/requester/point/about.html" class="btn mini blue">明細</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="mail">
+						<h2><a href="/">新しいメッセージがあります！<span>（13件）</span></a> </h2>
+						<div class="action_box">
+								次のアクション
+						</div>
+
+						<ul class="list">
+							<li><span class="flag mini green">作成中</span><a href="/">3件</a></li>
+							<li><span class="flag mini green">支援者選択</span><a href="/">3件</a></li>
+							<li><span class="flag mini green">完了確認</span><a href="/">3件</a></li>
+							<li><span class="flag mini green">評価待ち</span><a href="/">3件</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</article>
+		</section>
+
+		<section class="pickup">
+
+			<article>
+
+				<h2 class="mini_ttl">
+					おしごと一覧
+				</h2>
+
+
+				<div class="sort_list">
+					<div class="status">
+						ステータス
+						<select name="セレクトメニュー">
+							<option value="" selected="selected">-</option>
+							<option value="1">募集中</option>
+							<option value="2">お仕事成立</option>
+							<option value="3">完了報告</option>
+						</select>
+					</div>
+					<div class="result_list">
+						検索結果<em>159</em>件中1～10件を表示
+					</div>
+					<span class="title">並び順：</span>
+					<ul>
+						<li>
+							<a href="/" class="active">新しい</a>
+						</li>
+						<li>
+							<a href="/">古い</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="oshigoto_list">
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_kaji.png">
+									<h3>家事補助</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_mimamori.png">
+									<h3>見守り・安否確認</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_book.png">
+									<h3>趣味・カルチャー</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_eat.png">
+									<h3>食事</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_iryou.png">
+									<h3>医療介護</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_other.png">
+									<h3>その他</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_soudan.png">
+									<h3>相談</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/work/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="../../assets/img/content/detail/icon/img_mimamori.png">
+									<h3>見守り・安否確認</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+				</ul>
+
+				<div class="sort_list">
+					<div class="result_list">
+						検索結果<em>159</em>件中1～10件を表示
+					</div>
+					<span class="title">並び順：︎</span>
+					<ul>
+						<li>
+							<a href="/" class="active">新しい</a>
+						</li>
+						<span>/</span>
+						<li>
+							<a href="/">古い</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- PAGER START -->
+				<ul class="pager">
+					<li><a class="prev page-numbers" href=""></a></li>
+					<li class="active"><span class='page-numbers current'>1</span></li>
+					<li><a class='page-numbers' href=''>2</a></li>
+					<li><a class='page-numbers' href=''>3</a></li>
+					<li><a class='page-numbers' href=''>4</a></li>
+					<li><a class='page-numbers' href=''>5</a></li>
+					<li><a class="next page-numbers" href=""></a></li>
+				</ul>
+				<!-- PAGER END -->
+
+			</article>
+
+		</section>
+
+		<section class="news system">
+
+			<article>
+
+				<h2 class="mini_ttl">
+					運営からのお知らせ
+				</h2>
+
+				<ul>
+					<li>
+						<dl>
+							<dd><span class="category_1">カテゴリー</span></dd>
+							<dd>2017年6月7日</dd>
+							<dt>
+								<h3><a href="/content/news/article.html">ある島の物語が公開されました。</a></h3>
+							</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd><span class="category_2">カテゴリー</span></dd>
+							<dd>2017年6月17日</dd>
+							<dt>
+								<h3><a href="/content/news/article.html">かぐや姫の物語が公開されました。</a></h3>
+							</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd><span class="category_3">カテゴリー</span></dd>
+							<dd>2017年6月27日</dd>
+							<dt>
+								<h3><a href="/content/news/article.html">借りぐらしのアリエッティが公開されました。</a></h3>
+							</dt>
+						</dl>
+					</li>
+
+				</ul>
+
+				<a href="/" class="btn medium green">
+					<span>もっとみる</span>
+				</a>
+			</article>
+
+		</section>
+
+		<section class="bnr">
+			<ul>
+				<li>
+					<a href="/">
+						<img src="../../assets/img/content/bnr/katsuyou.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<img src="../../assets/img/content/bnr/syoukai.jpg">
+					</a>
+				</li>
+			</ul>
+		</section>
+
+
+	</main>
+
+	<!-- ------------ MAIN CONTENT END ------------ -->
+
+	<!-- パンくずリスト START -->
+	<div class="pan">
+
+		<div class="in">
+
+			<ul>
+				<li class="home"><a href="/index.html"></a></li>
+				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
+				<li>マイページ</li>
+			</ul>
+
+		</div>
+
+	</div>
+	<!-- パンくずリスト END -->
+
+
+	<!-- ------------ FOOTER START ------------ -->
+
+	<footer>
+
+		<!-- 会社名ロゴ -->
+		<div class="logo"><a href="/index.html"><img src="../../assets/img/common/logo_w.svg" alt="会社名"></a></div>
+
+
+		<!-- サイトマップ -->
+		<section class="sitemap">
+
+			<ul>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ1</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ2</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ3</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ4</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</section>
+
+
+		<!-- ドキュメントリンク -->
+		<section class="copyright">
+
+			<ul>
+				<li class="home"><a href="/index.html"></a></li>
+				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
+				<li>マイページ</li>
+			</ul>
+
+			<p><a href="/index.html">Copyright© otesuki</a></p>
+
+		</section>
+
+
+	</footer>
+
+	<!-- ------------ FOOTER END ------------ -->
+
+
+	<!-- ページトップスクロール -->
+	<div id="pageup">
+		<a href="#top"><img src="../../assets/img/common/arrow/pageup.svg" alt="ページトップ"></a>
+	</div>
+
+
+</div>
+
+<!-- ------------ ALL END ------------ -->
+
+
+<div id="ie_container"><div class="cover"><p>ページを表示できません。<br>このサイトは、最新のブラウザでご覧ください。</p></div></div>
+
+</body>
+</html>

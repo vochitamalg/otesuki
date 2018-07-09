@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>お仕事一覧 | otesuki</title>
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="http://---/assets/img/icon/fb.png">
+	<meta property="og:url" content="http://---">
+	<meta property="og:type" content="article">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/assets/img/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/assets/img/icon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/assets/img/icon/site.webmanifest">
+	<link rel="mask-icon" href="/assets/img/icon/safari-pinned-tab.svg" color="#42b086">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+	<!--<meta name="viewport" content="width=1320"> -->
+
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
+	<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+	<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="/assets/js/drawer.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+    <script src="/assets/js/flatpickr.min.js"></script>
+    <script src="/assets/js/ja.js"></script>
+    <script src="/assets/js/remodal.min.js"></script>
+    <script src="/assets/js/effect.js"></script>
+</head>
+
+<body class="drawer">
+
+
+<!-- ------------ ALL START ------------ -->
+
+<div id="container" class="otesuki_list">
+
+	<!-- ------------ HEADER START ------------ -->
+
+	<header class="front">
+
+		<div class="inner">
+
+			<!-- 会社名ロゴ -->
+			<h1>
+				<a href="/index.html">
+					<img src="/assets/img/common/logo_tate.svg" alt="otesuki" class="hide_sp">
+					<img src="/assets/img/common/logo_yoko.svg" alt="otesuki" class="hide_pc">
+				</a>
+			</h1>
+
+			<!-- ハンバーガーボタン -->
+			<button type="button" class="toggle hamburger">
+				<span class="mask"></span>
+				<span class="icon"></span>
+			</button>
+
+			<!-- ナビゲーション -->
+
+			<ul class="support">
+				<li class="hide_sp"><a href="/content/login/index.html">ログイン</a></li>
+				<li class="hide_sp"><a href="/content/help.html">ヘルプ</a></li>
+				<li class="hide_sp"><a href="/content/contact/index.html">お問い合わせ</a></li>
+				<li><a href="/content/register/index.html" class="btn small blue registration"><span>無料会員登録</span></a></li>
+			</ul>
+
+			<div class="nav_box">
+
+				<nav>
+
+					<div class="drawer_menu">
+						<ul class="item">
+							<li><a href="index.html" class="first"><span>はじめての方へ</span></a></li>
+							<li><a href="index.html" class="work_y"><span>おしごと一覧</span></a></li>
+						</ul>
+
+						<ul class="notification">
+							<li class="hide_pc"><a href="/content/login/index.html">ログイン</a></li>
+							<li class="hide_pc"><a href="/content/help.html">ヘルプ</a></li>
+							<li class="hide_pc"><a href="/content/contact/index.html">お問い合わせ</a></li>
+						</ul>
+
+					</div>
+
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- ------------ HEADER END ------------ -->
+
+    <!-- ------------ PAGE TITLE START ------------ -->
+
+    <div class="ttl">
+
+        <h1>おしごと一覧</h1>
+
+    </div>
+
+    <!-- ------------ PAGE TITLE END ------------ -->
+
+    <!-- パンくずリスト START -->
+    <div class="pan min">
+
+        <div class="in">
+
+            <ul>
+                <li class="home"><a href="/index.html"></a></li>
+                <li class="create_breadcrumb"><a href="/">おしごと一覧</a></li>
+                <li>ヘルパーのおしごと</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- パンくずリスト END -->
+
+
+	<!-- ------------ MAIN CONTENT START ------------ -->
+
+	<main role="main">
+
+
+        <section class="pickup">
+
+			<article>
+
+                <div class="search_head">
+
+                    <h2 class="mini_ttl">
+                        ヘルパーのおしごと
+                    </h2>
+
+                    <div class="count">
+                        <div class="count_number">
+                            <em>128</em>件
+                        </div>
+                        <a href="#terms_area" class="btn blue small">検索条件を変更する</a>
+                    </div>
+
+                    <!-- モーダル｜検索条件を変更する START -->
+                    <div class="remodal front_search_detail" data-remodal-id="terms_area">
+
+                        <button data-remodal-action="close" class="remodal-close"></button>
+
+                        <section class="content_search_detail accordion">
+
+                            <div class="inner">
+                                <h2>検索条件変更</h2>
+
+                                <div class="check_box">
+
+                                    <article>
+
+                                        <h3 id="area_1">北海道・東北</h3>
+
+                                        <!-- 全て選択 -->
+                                        <div class="target">
+                                            <input type="hidden" name="chk[target_1_1]" value="">
+                                            <input type="checkbox" name="chk[target_1_1]" id="chk_target_1_1" value="全て選択">
+                                            <label for="chk_target_1_1">全て選択</label>
+                                        </div>
+                                        <div class="open"> </div>
+
+                                        <ul class="set_list">
+                                            <li>
+                                                <h4>北海道</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_1_1]" value="">
+                                                    <input type="checkbox" name="chk[target_1_1_1]" id="chk_target_1_1_1" value="全て選択">
+                                                    <label for="chk_target_1_1_1">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_1_1_a]" value="">
+                                                        <input type="checkbox" name="chk[1_1_1_a]" id="chk_1_1_1_a" value="札幌">
+                                                        <label for="chk_1_1_1_a">札幌</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                    </article>
+
+                                    <article>
+
+                                        <h3>関東</h3>
+
+                                        <!-- 全て選択 -->
+                                        <div class="target">
+                                            <input type="hidden" name="chk[target_1_2]" value="">
+                                            <input type="checkbox" name="chk[target_1_2]" id="chk_target_1_2" value="全て選択">
+                                            <label for="chk_target_1_2">全て選択</label>
+                                        </div>
+
+                                        <div class="open"> </div>
+
+                                        <ul class="set_list">
+                                            <li>
+                                                <h4>東京</h4>
+                                                <div class="area_open"> </div>
+
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_a]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_a]" id="chk_target_1_2_a" value="全て選択">
+                                                    <label for="chk_target_1_2_a">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_a]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_a]" id="chk_1_2_0_a" value="千代田区">
+                                                        <label for="chk_1_2_0_a">千代田区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_b]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_b]" id="chk_1_2_0_b" value="中央区">
+                                                        <label for="chk_1_2_0_b">中央区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_c]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_c]" id="chk_1_2_0_c" value="港区">
+                                                        <label for="chk_1_2_0_c">港区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_d]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_d]" id="chk_1_2_0_d" value="新宿区">
+                                                        <label for="chk_1_2_0_d">新宿区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_e]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_e]" id="chk_1_2_0_e" value="文京区">
+                                                        <label for="chk_1_2_0_e">文京区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_f]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_f]" id="chk_1_2_0_f" value="台東区">
+                                                        <label for="chk_1_2_0_f">台東区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_g]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_g]" id="chk_1_2_0_g" value="墨田区">
+                                                        <label for="chk_1_2_0_g">墨田区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_h]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_h]" id="chk_1_2_0_h" value="江東区">
+                                                        <label for="chk_1_2_0_h">江東区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_i]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_i]" id="chk_1_2_0_i" value="品川区">
+                                                        <label for="chk_1_2_0_i">品川区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_j]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_j]" id="chk_1_2_0_j" value="目黒区">
+                                                        <label for="chk_1_2_0_j">目黒区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_k]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_k]" id="chk_1_2_0_k" value="大田区">
+                                                        <label for="chk_1_2_0_k">大田区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_l]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_l]" id="chk_1_2_0_l" value="世田谷区">
+                                                        <label for="chk_1_2_0_l">世田谷区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_m]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_m]" id="chk_1_2_0_m" value="渋谷区">
+                                                        <label for="chk_1_2_0_m">渋谷区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_n]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_n]" id="chk_1_2_0_n" value="中野区">
+                                                        <label for="chk_1_2_0_n">中野区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_o]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_o]" id="chk_1_2_0_o" value="杉並区">
+                                                        <label for="chk_1_2_0_o">杉並区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_p]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_p]" id="chk_1_2_0_p" value="豊島区">
+                                                        <label for="chk_1_2_0_p">豊島区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_q]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_q]" id="chk_1_2_0_q" value="北区">
+                                                        <label for="chk_1_2_0_q">北区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_r]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_r]" id="chk_1_2_0_r" value="荒川区">
+                                                        <label for="chk_1_2_0_r">荒川区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_s]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_s]" id="chk_1_2_0_s" value="板橋区">
+                                                        <label for="chk_1_2_0_s">板橋区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_t]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_t]" id="chk_1_2_0_t" value="練馬区">
+                                                        <label for="chk_1_2_0_t">練馬区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_u]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_u]" id="chk_1_2_0_u" value="足立区">
+                                                        <label for="chk_1_2_0_u">足立区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_v]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_v]" id="chk_1_2_0_v" value="葛飾区">
+                                                        <label for="chk_1_2_0_v">葛飾区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_w]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_w]" id="chk_1_2_0_w" value="江戸川区">
+                                                        <label for="chk_1_2_0_w">江戸川区</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_x]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_x]" id="chk_1_2_0_x" value="八王子市">
+                                                        <label for="chk_1_2_0_x">八王子市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_y]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_y]" id="chk_1_2_0_y" value="立川市">
+                                                        <label for="chk_1_2_0_y">立川市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_z]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_z]" id="chk_1_2_0_z" value="武蔵野市">
+                                                        <label for="chk_1_2_0_z">武蔵野市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_a1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_a1]" id="chk_1_2_0_a1" value="三鷹市">
+                                                        <label for="chk_1_2_0_a1">三鷹市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_b1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_b1]" id="chk_1_2_0_b1" value="梅市">
+                                                        <label for="chk_1_2_0_b1">⻘梅市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_c1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_c1]" id="chk_1_2_0_c1" value="府中市">
+                                                        <label for="chk_1_2_0_c1">府中市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_d1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_d1]" id="chk_1_2_0_d1" value="昭島市">
+                                                        <label for="chk_1_2_0_d1">昭島市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_e1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_e1]" id="chk_1_2_0_e1" value="調布市">
+                                                        <label for="chk_1_2_0_e1">調布市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_g1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_g1]" id="chk_1_2_0_g1" value="町田市">
+                                                        <label for="chk_1_2_0_g1">町田市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_i1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_i1]" id="chk_1_2_0_i1" value="小金井市">
+                                                        <label for="chk_1_2_0_i1">小金井市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_j1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_j1]" id="chk_1_2_0_j1" value="小平市">
+                                                        <label for="chk_1_2_0_j1">小平市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_k1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_k1]" id="chk_1_2_0_k1" value="日野市">
+                                                        <label for="chk_1_2_0_k1">日野市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_l1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_l1]" id="chk_1_2_0_l1" value="東村山市">
+                                                        <label for="chk_1_2_0_l1">東村山市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_m1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_m1]" id="chk_1_2_0_m1" value="国分寺市">
+                                                        <label for="chk_1_2_0_m1">国分寺市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_n1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_n1]" id="chk_1_2_0_n1" value="国立市">
+                                                        <label for="chk_1_2_0_n1">国立市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_o1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_o1]" id="chk_1_2_0_o1" value="福生市">
+                                                        <label for="chk_1_2_0_o1">福生市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_p1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_p1]" id="chk_1_2_0_p1" value="狛江市">
+                                                        <label for="chk_1_2_0_p1">狛江市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_q1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_q1]" id="chk_1_2_0_q1" value="東大和市">
+                                                        <label for="chk_1_2_0_q1">東大和市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_r1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_r1]" id="chk_1_2_0_r1" value="清瀬市">
+                                                        <label for="chk_1_2_0_r1">清瀬市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_s1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_s1]" id="chk_1_2_0_s1" value="東久留米市">
+                                                        <label for="chk_1_2_0_s1">東久留米市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_t1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_t1]" id="chk_1_2_0_t1" value="武蔵村山市">
+                                                        <label for="chk_1_2_0_t1">武蔵村山市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_u1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_u1]" id="chk_1_2_0_u1" value="多摩市">
+                                                        <label for="chk_1_2_0_u1">多摩市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_v1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_v1]" id="chk_1_2_0_v1" value="稲城市">
+                                                        <label for="chk_1_2_0_v1">稲城市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_w1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_w1]" id="chk_1_2_0_w1" value="羽村市">
+                                                        <label for="chk_1_2_0_w1">羽村市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_x1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_x1]" id="chk_1_2_0_x1" value="あきる野市">
+                                                        <label for="chk_1_2_0_x1">あきる野市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_y1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_y1]" id="chk_1_2_0_y1" value="東京市">
+                                                        <label for="chk_1_2_0_y1">⻄東京市</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_z1]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_z1]" id="chk_1_2_0_z1" value="多摩郡瑞穂町">
+                                                        <label for="chk_1_2_0_z1">⻄多摩郡瑞穂町</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_a2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_a2]" id="chk_1_2_0_a2" value="多摩郡檜原村">
+                                                        <label for="chk_1_2_0_a2">⻄多摩郡檜原村</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_b2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_b2]" id="chk_1_2_0_b2" value="多摩郡日の出町">
+                                                        <label for="chk_1_2_0_b2">⻄多摩郡日の出町</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_c2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_c2]" id="chk_1_2_0_c2" value="⻄多摩郡奥多摩町">
+                                                        <label for="chk_1_2_0_c2">⻄多摩郡奥多摩町</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_d2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_d2]" id="chk_1_2_0_d2" value="大島町">
+                                                        <label for="chk_1_2_0_d2">大島町</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_e2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_e2]" id="chk_1_2_0_e2" value="新島村">
+                                                        <label for="chk_1_2_0_e2">新島村</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_f2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_f2]" id="chk_1_2_0_f2" value="三宅島三宅村">
+                                                        <label for="chk_1_2_0_f2">三宅島三宅村</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_g2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_g2]" id="chk_1_2_0_g2" value="八丈島八丈町">
+                                                        <label for="chk_1_2_0_g2">八丈島八丈町</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_0_h2]" value="">
+                                                        <input type="checkbox" name="chk[1_2_0_h2]" id="chk_1_2_0_h2" value="小笠原村">
+                                                        <label for="chk_1_2_0_h2">小笠原村</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>神奈川</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_b]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_b]" id="chk_target_1_2_b" value="全て選択">
+                                                    <label for="chk_target_1_2_b">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_1_a]" value="">
+                                                        <input type="checkbox" name="chk[1_2_1_a]" id="chk_1_2_1_a" value="横浜市">
+                                                        <label for="chk_1_2_1_a">横浜市</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>埼玉</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_c]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_c]" id="chk_target_1_2_c" value="全て選択">
+                                                    <label for="chk_target_1_2_c">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_1_b]" value="">
+                                                        <input type="checkbox" name="chk[1_2_1_b]" id="chk_1_2_1_b" value="さいたま市">
+                                                        <label for="chk_1_2_1_b">さいたま市</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>千葉</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_d]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_d]" id="chk_target_1_2_d" value="全て選択">
+                                                    <label for="chk_target_1_2_d">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_1_c]" value="">
+                                                        <input type="checkbox" name="chk[1_2_1_c]" id="chk_1_2_1_c" value="市原市">
+                                                        <label for="chk_1_2_1_c">市原市</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>栃木</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_e]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_e]" id="chk_target_1_2_e" value="全て選択">
+                                                    <label for="chk_target_1_2_e">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_1_d]" value="">
+                                                        <input type="checkbox" name="chk[1_2_1_d]" id="chk_1_2_1_d" value="宇都宮市">
+                                                        <label for="chk_1_2_1_d">宇都宮市</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>茨城</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_f]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_f]" id="chk_target_1_2_f" value="全て選択">
+                                                    <label for="chk_target_1_2_f">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_1_e]" value="">
+                                                        <input type="checkbox" name="chk[1_2_1_e]" id="chk_1_2_1_e" value="牛久市">
+                                                        <label for="chk_1_2_1_e">牛久市</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>群馬</h4>
+                                                <div class="area_open"> </div>
+                                                <!-- 全て選択 -->
+                                                <div class="target">
+                                                    <input type="hidden" name="chk[target_1_2_g]" value="">
+                                                    <input type="checkbox" name="chk[target_1_2_g]" id="chk_target_1_2_g" value="全て選択">
+                                                    <label for="chk_target_1_2_g">全て選択</label>
+                                                </div>
+
+                                                <ul class="area_list">
+                                                    <li>
+                                                        <input type="hidden" name="chk[1_2_1_f]" value="">
+                                                        <input type="checkbox" name="chk[1_2_1_f]" id="chk_1_2_1_f" value="渋川市">
+                                                        <label for="chk_1_2_1_f">渋川市</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                    </article>
+
+                                    <article>
+
+                                        <h3>中部</h3>
+
+                                        <div class="open"> </div>
+                                        <!-- 全て選択 -->
+                                        <div class="target">
+                                            <input type="hidden" name="chk[target_1_4]" value="">
+                                            <input type="checkbox" name="chk[target_1_4]" id="chk_target_1_4" value="全て選択">
+                                            <label for="chk_target_1_4">全て選択</label>
+                                        </div>
+
+                                        <ul class="set_list">
+                                        </ul>
+
+                                    </article>
+
+                                    <article>
+
+                                        <h3>関⻄</h3>
+
+                                        <div class="open"> </div>
+                                        <!-- 全て選択 -->
+                                        <div class="target">
+                                            <input type="hidden" name="chk[target_1_5]" value="">
+                                            <input type="checkbox" name="chk[target_1_5]" id="chk_target_1_5" value="全て選択">
+                                            <label for="chk_target_1_5">全て選択</label>
+                                        </div>
+
+                                        <ul class="set_list">
+
+                                        </ul>
+
+                                    </article>
+
+                                    <article>
+
+                                        <h3>中国・四国</h3>
+
+                                        <div class="open"> </div>
+                                        <!-- 全て選択 -->
+                                        <div class="target">
+                                            <input type="hidden" name="chk[target_1_6]" value="">
+                                            <input type="checkbox" name="chk[target_1_6]" id="chk_target_1_6" value="全て選択">
+                                            <label for="chk_target_1_6">全て選択</label>
+                                        </div>
+
+                                        <ul class="set_list">
+
+                                        </ul>
+
+                                    </article>
+
+                                    <article>
+
+                                        <h3>九州・沖縄</h3>
+
+                                        <div class="open"> </div>
+
+                                        <!-- 全て選択 -->
+                                        <div class="target">
+                                            <input type="hidden" name="chk[target_1_7]" value="">
+                                            <input type="checkbox" name="chk[target_1_7]" id="chk_target_1_7" value="全て選択">
+                                            <label for="chk_target_1_7">全て選択</label>
+                                        </div>
+
+                                        <ul class="set_list">
+
+                                        </ul>
+
+                                    </article>
+
+                                    <ul class="transmission">
+                                        <li><input type="submit" id="" value="検索する" class="btn big green"></li>
+                                    </ul>
+
+                                </div>
+                                <!-- SETLIST END -->
+
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <!-- モーダル｜検索条件を変更する END -->
+
+                </div>
+
+
+				<div class="sort_list">
+					<div class="status">
+						ステータス
+						<select name="セレクトメニュー">
+							<option value="" selected="selected">-</option>
+							<option value="1">募集中</option>
+							<option value="2">お仕事成立</option>
+							<option value="3">完了報告</option>
+						</select>
+					</div>
+					<div class="result_list">
+						検索結果<em>128</em>件中1～10件を表示
+					</div>
+					<span class="title">並び順：</span>
+					<ul>
+						<li>
+							<a href="/" class="active">新しい</a>
+						</li>
+						<li>
+							<a href="/">古い</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="oshigoto_list">
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_kaji.png">
+									<h3>家事補助</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal green">お仕事成立</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_mimamori.png">
+									<h3>見守り・安否確認</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+                                    2017年1月1日 9:00
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+                                    <div class="helper"><span class="icon_people">支援者：〇〇〇〇さん</span></div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal red">完了報告</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_book.png">
+									<h3>趣味・カルチャー</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年1月1日 9:00
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+                                    <div class="helper"><span class="icon_people">支援者：〇〇〇〇さん</span></div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_eat.png">
+									<h3>食事</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_iryou.png">
+									<h3>医療介護</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_other.png">
+									<h3>その他</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_soudan.png">
+									<h3>相談</h3>
+								</div>
+							</div>
+
+							<div class="favorite active"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+
+					<a href="/content/list/detail.html">
+						<li class="inner">
+
+							<div class="box">
+
+								<span class="flag normal blue">募集中</span>
+
+								<div class="detail_icon">
+									<img src="/assets/img/content/detail/icon/img_mimamori.png">
+									<h3>見守り・安否確認</h3>
+								</div>
+							</div>
+
+							<div class="favorite"> <!--activeをつけると星に色が塗られます-->
+								<span>お気に入り</span>
+							</div>
+
+							<div class="area">
+								<div class="day">
+									2017年0月0日00:00まで
+									<span class="time">３時間</span>
+								</div>
+								<div class="sub_ttl">
+									<span class="flag normal green_b">NEW!</span>
+									<span class="flag normal yellow_b">緊急</span>
+									<h3>タイトルタイトルタイトルタイトルタイトル</h3>
+								</div>
+
+								<div class="work_box">
+									<div class="medal"><span>ケアマネージャー</span></div>
+									<div class="price">
+										<span class="mini">3時間</span>
+										3,000円
+									</div>
+									<div class="number"><span class="flag mini green">応募数</span>14件</div>
+									<div class="more_day"><span class="bold">あと4日</span>※1日をきると23:59</div>
+									<div class="address">
+										埼玉県さいたま市〇〇〇〇駅より 駅徒歩〇〇分
+									</div>
+								</div>
+
+								<div class="necessary">
+									<div class="heart"><span>要支援1</span></div>
+									<div class="people"><span>ニックネーム</span></div>
+								</div>
+							</div>
+						</li>
+					</a>
+				</ul>
+
+				<div class="sort_list">
+					<div class="result_list">
+						検索結果<em>159</em>件中1～10件を表示
+					</div>
+					<span class="title">並び順：︎</span>
+					<ul>
+						<li>
+							<a href="/" class="active">新しい</a>
+						</li>
+						<span>/</span>
+						<li>
+							<a href="/">古い</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- PAGER START -->
+				<ul class="pager">
+					<li><a class="prev page-numbers" href=""></a></li>
+					<li class="active"><span class='page-numbers current'>1</span></li>
+					<li><a class='page-numbers' href=''>2</a></li>
+					<li><a class='page-numbers' href=''>3</a></li>
+					<li><a class='page-numbers' href=''>4</a></li>
+					<li><a class='page-numbers' href=''>5</a></li>
+					<li><a class="next page-numbers" href=""></a></li>
+				</ul>
+				<!-- PAGER END -->
+
+			</article>
+
+		</section>
+	</main>
+
+	<!-- ------------ MAIN CONTENT END ------------ -->
+
+	<!-- ------------ FOOTER START ------------ -->
+
+	<footer>
+
+		<!-- 会社名ロゴ -->
+		<div class="logo"><a href="/index.html"><img src="/assets/img/common/logo_w.svg" alt="会社名"></a></div>
+
+		<!-- サイトマップ -->
+		<section class="sitemap">
+
+			<ul>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ1</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ2</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ3</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="/index.html"><span>カテゴリ4</span></a></h2>
+					<ul>
+						<li><a href="/index.html">コンテンツ1</a></li>
+						<li><a href="/index.html">コンテンツ2</a></li>
+						<li><a href="/index.html">コンテンツ3</a></li>
+						<li><a href="/index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</section>
+
+
+		<!-- ドキュメントリンク -->
+		<section class="copyright">
+
+			<ul>
+				<li><a href="/index.html">プライバシーポリシー</a></li>
+				<li><a href="/index.html">サイトマップ</a></li>
+			</ul>
+
+			<p><a href="/index.html">Copyright© otesuki</a></p>
+
+		</section>
+
+
+	</footer>
+
+	<!-- ------------ FOOTER END ------------ -->
+
+
+	<!-- ページトップスクロール -->
+	<div id="pageup">
+		<a href="#top"><img src="/assets/img/common/arrow/pageup.svg" alt="ページトップ"></a>
+	</div>
+
+
+</div>
+
+<!-- ------------ ALL END ------------ -->
+
+
+<div id="ie_container"><div class="cover"><p>ページを表示できません。<br>このサイトは、最新のブラウザでご覧ください。</p></div></div>
+
+</body>
+</html>

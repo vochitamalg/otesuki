@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+// ---- テーマの基本スタイル ----
+
+// メインカラー
+$main-color: #42b086;
+$sub-color: #f2c71d;
+$accent-color: #4285b0;
+$caution-color: #ee5872;
+
+// 標準フォントカラー
+$base-font-color: #333333;
+
+// リンクカラー
+$color-link: #FFF;
+$color-link-hover: #3a3a3a;
+
+// フォント指定
+$base-font-family: "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", 'Roboto', sans-serif;
+
+// 標準ボーダーカラー
+$border-color: #CCCCCC;
+
+// ボックス
+$box: #eeeeee;
+
+
+// ---- レイアウト系 ----
+
+// PC版wrapperの横幅
+$width-wraper-small: 750px;
+$width-wraper: 1000px;
+$width-wraper-large: 1400px;

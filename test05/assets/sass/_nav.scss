@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+// ------------ NAV LAYOUT ------------
+
+.nav_box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  position: relative;
+
+  ul {
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+
+      a {
+        font-weight: 700;
+        color: $base-font-color;
+
+        &:visited {
+          color: $base-font-color;
+        }
+
+      }
+    }
+  }
+
+
+  .item {
+    position: relative;
+    top: 70px;
+    left: 130px;
+    width: calc(100% - 130px);
+
+    @include mq() {
+      width: 100%;
+      position: static;
+    }
+
+    li {
+
+      a {
+
+        &.mypage {
+          span {
+            background-image: url(../img/common/icon/icon_mypage.svg);
+            background-position: left center;
+            background-size: 30px 30px;
+            padding: 10px 0 10px 40px;
+          }
+        }
+
+        &.search {
+          span {
+            background-image: url(../img/common/icon/icon_rich_search.svg);
+            background-position: left center;
+            background-size: 30px 30px;
+            padding: 10px 0 10px 40px;
+          }
+        }
+
+        &.schedule {
+          span {
+            background-image: url(../img/common/icon/icon_calendar.svg);
+            background-position: left center;
+            background-size: 30px 30px;
+            padding: 10px 0 10px 40px;
+          }
+        }
+
+        &.work {
+          span {
+            background-image: url(../img/common/icon/icon_list.svg);
+            background-position: left center;
+            background-size: 30px 30px;
+            padding: 10px 0 10px 40px;
+          }
+        }
+
+        &.work_y {
+          span {
+            background-image: url(../img/common/icon/icon_list_y.svg);
+            background-position: left center;
+            background-size: 30px 30px;
+            padding: 10px 0 10px 40px;
+          }
+        }
+
+        &.first {
+          span {
+            background-image: url(../img/common/icon/icon_power_y.svg);
+            background-position: left center;
+            background-size: 30px 30px;
+            padding: 10px 0 10px 40px;
+          }
+        }
+
+        display: block;
+        position: relative;
+        padding-bottom: 15px;
+
+        &:before {
+          content: '';
+          width: 0;
+          left: 50%;
+          bottom: 0;
+          transition: all 0.3s ease;
+          border-bottom: 3px solid $main-color;
+          position: absolute;
+          display: block;
+        }
+
+        &:hover:before {
+          width: 50%;
+          border-bottom: 3px solid $main-color;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:after {
+          content: '';
+          width: 0;
+          right: 50%;
+          bottom: 0;
+          transition: all 0.3s ease;
+          border-bottom: 3px solid $main-color;
+          position: absolute;
+          display: block;
+        }
+
+        &:hover:after {
+          width: 50%;
+          border-bottom: 3px solid $main-color;
+        }
+
+      }
+
+    }
+  }
+
+
+  .notification {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: block;
+
+    @include mq() {
+      position: static;
+
+      li {
+        a {
+          font-size: 18px;
+          display: block;
+          padding: 5px 15px;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+header.front {
+  .item {
+
+    li {
+
+      a {
+        &:before {
+          border-bottom: 3px solid $sub-color;
+        }
+
+        &:hover:before {
+          border-bottom: 3px solid $sub-color;
+        }
+
+        &:after {
+          border-bottom: 3px solid $sub-color;
+        }
+
+        &:hover:after {
+          border-bottom: 3px solid $sub-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+nav {
+
+	@include mq() {
+		-webkit-transform: none;
+		transform: none;
+	}
+
+	// 折りたたみ時
+	@include mq() {
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		overflow: hidden;
+		width: 16.25rem;
+		height: 100%;
+		background-color: #fff;
+	}
+
+	ul {
+		// clearfix
+		@extend %clearfix;
+
+		// 折りたたみ時
+		@include mq() {
+			width: 100%;
+			padding: 20px 0;
+		}
+
+		li {
+
+			// 折りたたみ時
+			@include mq() {
+				width: 100%;
+				float: none;
+			}
+
+			a {
+				// 折りたたみ時
+				@include mq() {
+					padding: 15px;
+					border-bottom: #ececec 1px solid;
+				}
+			}
+		}
+	}
+}

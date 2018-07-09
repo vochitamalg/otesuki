@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>お問い合わせ</title>
+	
+	<!-- 下層は記述を省略しています -->
+	
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+	<!--<meta name="viewport" content="width=1320"> -->
+	
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<!--[if IE 7 ]> <html class="ie7"> <![endif]--> 
+	<!--[if IE 8 ]> <html class="ie8"> <![endif]--> 
+	<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+	<script src="/assets/js/drawer.js"></script>
+	<script src="/assets/js/slick.min.js"></script>
+	<script src="/assets/js/owl.carousel.js"></script>
+	<script src="/assets/js/flatpickr.min.js"></script>
+	<script src="/assets/js/ja.js"></script>
+	<script src="/assets/js/remodal.min.js"></script>
+	<script src="/assets/js/effect.js"></script>
+
+</head>
+	
+<body class="drawer">
+
+<!-- //// ALL START //// -->
+
+<!-- classにコンテンツディレクトリを付与する -->
+<div id="container" class="article form">
+		
+	
+	<!-- //// HEADER START //// -->
+	
+	<header>
+		
+		<div class="inner">
+			
+			<!-- 会社名ロゴ -->
+			<h1><a href="../../index.html"><img src="../../assets/img/common/logo.svg" alt="会社名"></a></h1>
+			
+			<!-- ハンバーガーボタン -->
+			<button type="button" class="toggle hamburger">
+				<span class="mask"></span>
+				<span class="icon"></span>
+			</button>
+
+			<!-- ナビゲーション -->
+			<nav>
+				<ul>
+					<li class="switching">
+						<a href="../../index.html"><img src="../form/assets/img/common/logo_2.svg" alt="会社名"></a>
+					</li>
+					<li><a href="../sample/index.html" class="active">Nav1</a></li>
+					<li><a href="../sample/index.html">Nav2</a></li>
+					<li><a href="../sample/index.html">Nav3</a></li>
+					<li><a href="../sample/index.html">Nav4</a></li>
+					<li><a href="../sample/index.html">Nav5</a></li>
+					<li class="switching">
+						<ul>
+							<li><a href="../sample/index.html">プライバシーポリシー</a></li>
+							<li><a href="index.html">お問い合わせ</a></li>
+							<li><a href="../sample/index.html">会社概要</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- CVボタン -->
+			<div class="cv"><a href="index.html"><p><span>お問い合わせ</span></p></a></div>
+				
+		</div>
+			
+	</header>
+	
+	<!-- //// HEADER END //// -->
+
+	<!-- パンくずリスト START -->
+	<div class="pan">
+
+		<div class="in">
+
+			<ul>
+				<li><a href="../../index.html">TOP</a></li>
+				<li>ページタイトル</li>
+			</ul>
+
+		</div>
+
+	</div>
+	<!-- パンくずリスト END -->
+
+	
+	<!-- //// PAGE TITLE START //// -->
+
+	<div class="ttl">
+
+		<h1>お問い合わせ</h1>
+
+	</div>
+
+	<!-- //// PAGE TITLE END //// -->
+
+	
+	<div class="column_1">
+
+		<!-- //// MAIN CONTENT START //// -->
+
+		<main role="main">
+
+			<!-- CONTENTS START -->
+			<section>
+				
+				<div class="flow_nav fm_top" id="fm_top">
+					<ul class="front">
+						<li><span>1 入力</span></li>
+						<li><span>2 確認</span></li>
+						<li><span>3 完了</span></li>
+					</ul>
+				</div>
+				
+				<p class="head"><span class="essential">必須</span>は必須項目です。弊社へお問い合わせいただく方は、<a href="../privacy.html" target="_blank">個人情報の取り扱いについて</a>を必ずお読みください。</p>
+
+
+				<!-- FORM START -->
+				<div id="fm_form">
+
+					<form id="fm_action" action="../page/confirm.php" method="post">
+
+					<table>
+						<tbody>
+							<tr>
+								<th>
+									<p>お名前</p>
+									<span class="essential">必須</span>
+								</th>
+								<td>
+									<div class="err_area" id="">
+										<p>お名前は必須項目です。</p>
+									</div>
+									<input name="" value="" placeholder="" required>
+									<p><span class="arrow">記入例：毛玖珠 太郎</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>ふりがな</p>
+								</th>
+								<td>
+									<input name="" value="" placeholder="">
+									<p><span class="arrow">記入例：おてすき たろう</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>電話番号</p>
+								</th>
+								<td>
+									<input type="tel" name="" value="" placeholder="">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>メールアドレス</p>
+									<span class="essential">必須</span>
+								</th>
+								<td>
+									<div class="err_area" id="">
+										<p>メールアドレスは必須項目です。</p>
+									</div>
+									<input type="email" name="" value="" placeholder="">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>メールアドレス(確認)</p>
+									<span class="essential">必須</span>
+								</th>
+								<td>
+									<div class="err_area" id="">
+										<p>メールアドレスは必須項目です。</p>
+									</div>
+									<input type="email" name="" value="" placeholder="もう一度入力してください">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>住所</p>
+									<span class="essential">必須</span>
+								</th>
+								<td>
+									<div class="err_area" id="">
+										<p>住所は必須項目です。</p>
+									</div>
+									<p><span class="arrow">郵便番号 (半角数字)</span></p>
+
+									<ul class="number">
+										<li><input type="text" name="" placeholder="000" maxlength="3"><span>-</span></li>
+										<li><input type="text" name="" placeholder="1234"maxlength="4"></li>
+									</ul>
+
+									<p><span class="arrow">都道府県</span></p>
+									<select name="" id="" class="selectBox200">
+										<option value="">選択</option>
+											<optgroup label="北海道・東北地方">
+												<option value="1">北海道</option>
+												<option value="2">青森県</option>
+												<option value="3">岩手県</option>
+												<option value="5">秋田県</option>
+												<option value="4">宮城県</option>
+												<option value="6">山形県</option>
+												<option value="7">福島県</option>
+											</optgroup>
+											<optgroup label="関東地方">
+												<option value="13">東京都</option>
+												<option value="14">神奈川県</option>
+												<option value="11">埼玉県</option>
+												<option value="12">千葉県</option>
+												<option value="8">茨城県</option>
+												<option value="9">栃木県</option>
+												<option value="10">群馬県</option>
+											</optgroup>
+											<optgroup label="甲信越地方">
+												<option value="19">山梨県</option>
+												<option value="20">長野県</option>
+												<option value="15">新潟県</option>
+											</optgroup>
+											<optgroup label="東海地方">
+												<option value="22">静岡県</option>
+												<option value="23">愛知県</option>
+												<option value="21">岐阜県</option>
+												<option value="24">三重県</option>
+											</optgroup>
+											<optgroup label="北陸地方">
+												<option value="16">富山県</option>
+												<option value="17">石川県</option>
+												<option value="18">福井県</option>
+											</optgroup>
+											<optgroup label="近畿地方">
+												<option value="27">大阪府</option>
+												<option value="26">京都府</option>
+												<option value="29">奈良県</option>
+												<option value="25">滋賀県</option>
+												<option value="30">和歌山県</option>
+												<option value="28">兵庫県</option>
+											</optgroup>
+											<optgroup label="中国地方">
+											<option value="33">岡山県</option>
+												<option value="34">広島県</option>
+												<option value="31">鳥取県</option>
+												<option value="32">島根県</option>
+												<option value="35">山口県</option>
+											</optgroup>
+											<optgroup label="四国地方">
+												<option value="37">香川県</option>
+												<option value="36">徳島県</option>
+												<option value="38">愛媛県</option>
+												<option value="39">高知県</option>
+											</optgroup>
+											<optgroup label="九州・沖縄地方">
+												<option value="40">福岡県</option>
+												<option value="41">佐賀県</option>
+												<option value="42">長崎県</option>
+												<option value="44">大分県</option>
+												<option value="43">熊本県</option>
+												<option value="45">宮崎県</option>
+												<option value="46">鹿児島県</option>
+												<option value="47">沖縄県</option>
+											</optgroup>
+										</select>
+
+									<p><span class="arrow">市区町村</span></p>
+									<input type="text" name="" placeholder="〇〇区〇〇町">
+
+									<p><span class="arrow">以降の住所</span></p>
+									<input type="text" name="">
+								</td>
+							</tr>
+							<!-- 性別 -->
+							<tr>
+								<th>
+									<p>性別</p>
+									<span class="essential">必須</span>
+								</th>
+								<td>
+									<ul class="check_list">
+										<li>
+											<input type="radio" name="a" id="a_1">
+											<label for="a_1">男性</label>
+										</li>
+										<li>
+											<input type="radio" name="a" id="a_2">
+											<label for="a_2">女性</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>お問い合わせ内容</p>
+									<span class="essential">必須</span>
+								</th>
+								<td>
+									<div class="err_area" id="">
+										<p>お問い合わせ内容は必須項目です。</p>
+									</div>
+									<textarea name=""></textarea>
+								</td>
+							</tr>
+							<!-- 各class -->
+							<tr>
+								<th>
+									<p>各classとパーツ</p>
+								</th>
+								<td>
+									<ul class="break">
+										<li><p><span class="arrow">苗字</span></p><input type="text" name="苗字" placeholder="苗字を入力してください"></li>
+										<li><p><span class="arrow">名前</span></p><input type="text" name="名前" placeholder="名前を入力してください"></li>
+									</ul>
+									<p><span class="arrow">記入例：毛玖珠 太郎</span></p>
+
+									<!-- 長さを変える -->
+									<p><span class="arrow">長さを変える</span></p>
+									<input type="text" name="苗字" placeholder="指定なし">
+									<input type="text" name="苗字" class="wth_80" placeholder="wth_80"><br>
+									<input type="text" name="苗字" class="wth_70" placeholder="wth_70"><br>
+									<input type="text" name="苗字" class="wth_50" placeholder="wth_50"><br>
+									<input type="text" name="苗字" class="wth_30" placeholder="wth_30"><br>
+
+									<!-- 途中でテキストが入る -->
+									<p><span class="arrow">途中でテキストが入る</span></p>
+									<ul class="variable">
+										<li><input type="text" name="メールアドレス"><span>が入ったカレーライス</span></li>
+									</ul>
+
+									<!-- 複数の項目を均等にわける -->
+									<p><span class="arrow">複数の項目を均等にわける</span></p>
+									<ul class="break">
+										<li><input type="text" placeholder="1項目"></li>
+										<li><input type="text" placeholder="2項目"></li>
+									</ul>
+
+									<ul class="break">
+										<li><input type="text" placeholder="1項目"></li>
+										<li><input type="text" placeholder="2項目"></li>
+										<li><input type="text" placeholder="3項目"></li>
+									</ul>
+
+
+									<ul class="phone">
+										<li><input type="tel" placeholder="0000"><span>-</span></li>
+										<li><input type="tel" placeholder="1234"><span>-</span></li>
+										<li><input type="tel" placeholder="1234"></li>
+									</ul>
+
+									<ul class="number">
+										<li><input type="text" name="" placeholder="000" maxlength="3"><span>-</span></li>
+										<li><input type="text" name="" placeholder="1234"maxlength="4"></li>
+									</ul>
+
+									<!-- パスワード -->
+									<p><span class="arrow">パスワードを入力してください。</span></p>
+									<input type="password" class="wth_30" placeholder="パスワード">
+
+									<!-- ラジオボタン -->
+									<p><span class="arrow">ラジオボタン</span></p>
+									<ul class="check_list">
+										<li>
+											<input type="radio" name="d" id="d_1">
+											<label for="d_1">ピンクグレープフルーツ</label>
+										</li>
+										<li>
+											<input type="radio" name="d" id="d_2">
+											<label for="d_2">アスパラソバージュ</label>
+										</li>
+										<li>
+											<input type="radio" name="d" id="d_3">
+											<label for="d_3">アイベリー</label>
+										</li>
+										<li>
+											<input type="radio" name="d" id="d_4">
+											<label for="d_4">グリーンピース</label>
+										</li>
+									</ul>
+									
+									<br>
+									
+									<!-- チェックボックス -->
+									<p><span class="arrow">チェックボックス</span></p>
+									<ul class="check_list">
+										<li>
+											<input type="hidden" name="chk[0]" value="">
+											<input type="checkbox" name="chk[0]" id="chk_0" value="ピンクグレープフルーツ">
+											<label for="chk_0">ピンクグレープフルーツ</label>
+										</li>
+										<li>
+											<input type="hidden" name="chk[1]" value="">
+											<input type="checkbox" name="chk[1]" id="chk_1" value="アスパラソバージュ">
+											<label for="chk_1">アスパラソバージュ</label>
+										</li>
+										<li>
+											<input type="hidden" name="chk[2]" value="">
+											<input type="checkbox" name="chk[2]" id="chk_2" value="アイベリー">
+											<label for="chk_2">アイベリー</label>
+										</li>
+										<li>
+											<input type="hidden" name="chk[3]" value="">
+											<input type="checkbox" name="chk[3]" id="chk_3" value="グリーンピース">
+											<label for="chk_3">グリーンピース</label>
+										</li>
+										<li>
+											<input type="hidden" name="chk[4]" value="">
+											<input type="checkbox" name="chk[4]" id="chk_4" value="バレンシアオレンジ">
+											<label for="chk_4">バレンシアオレンジ</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+						
+					<!-- 個人情報の同意 START -->
+					<div class="agree_box">
+						
+						<p class="bold">弊社へお問い合わせいただく方は、下記「個人情報の取り扱いについて」を必ずお読みください。</p>
+
+						<a href="/content/privacy.html"><span>個人情報保護方針について</span></a>
+
+						<p>以上の「個人情報の取り扱いについて」に同意いただける場合は下記ボックスをチェックし、お問い合わせフォームに必要事項をご記入のうえ送信してください。尚、お問い合わせの内容によっては、返信に時間がかかる場合や、お答えできない場合があることをご了承ください。</p>
+
+						<h3>個人情報の取り扱いについて</h3>
+
+						<!-- エラー文仮入れ START -->
+						<ul class="error_access">
+							<li>氏名は必須項目です。</li>
+						</ul>
+						<!-- エラー文仮入れ END -->
+
+						<ul class="check_list">
+							<li>
+								<input type="radio" name="e" id="e_1">
+								<label for="e_1">同意する</label>
+							</li>
+							<li>
+								<input type="radio" name="e" id="e_2" checked>
+								<label for="e_2">同意しない</label>
+							</li>
+						</ul>
+
+					</div>
+					<!-- 個人情報の同意 END -->
+						
+					<p class="closing">すべて入力がおすみになりましたら、確認画面ボタンを押してください。</p>
+					
+					<ul class="transmission">
+						<li><input type="hidden" name="token" id="token" value=""></li>
+						<li><input type="submit" id="fm_btn_confirm" value="確認画面へ"></li>
+					</ul>
+
+					</form>
+
+				</div>	
+				<!-- FORM END -->
+
+			</section>
+			<!-- CONTENTS END -->
+
+		</main>
+		
+		<!-- //// MAIN CONTENT END //// -->
+
+	</div>
+	
+	<!-- パンくずリスト START -->
+	<div class="pan">
+
+		<div class="in">
+			
+			<ul>
+				<li><a href="../../index.html">TOP</a></li>
+				<li>ページタイトル</li>
+			</ul>
+
+		</div>
+
+	</div>
+	<!-- パンくずリスト END -->
+	
+	<!-- //// FOOTER START //// -->
+	
+	<footer>
+
+		<!-- 会社名ロゴ -->
+		<div class="logo"><a href="../../index.html"><img src="../../assets/img/common/logo.svg" alt="会社名"></a></div>
+
+
+		<!-- サイトマップ -->
+		<section class="sitemap">
+
+			<ul>
+				<li class="frame">
+					<h2><a href="../../index.html"><span>カテゴリ1</span></a></h2>
+					<ul>
+						<li><a href="../../index.html">コンテンツ1</a></li>
+						<li><a href="../../index.html">コンテンツ2</a></li>
+						<li><a href="../../index.html">コンテンツ3</a></li>
+						<li><a href="../../index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="../../index.html"><span>カテゴリ2</span></a></h2>
+					<ul>
+						<li><a href="../../index.html">コンテンツ1</a></li>
+						<li><a href="../../index.html">コンテンツ2</a></li>
+						<li><a href="../../index.html">コンテンツ3</a></li>
+						<li><a href="../../index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="../../index.html"><span>カテゴリ3</span></a></h2>
+					<ul>
+						<li><a href="../../index.html">コンテンツ1</a></li>
+						<li><a href="../../index.html">コンテンツ2</a></li>
+						<li><a href="../../index.html">コンテンツ3</a></li>
+						<li><a href="../../index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+				<li class="frame">
+					<h2><a href="../../index.html"><span>カテゴリ4</span></a></h2>
+					<ul>
+						<li><a href="../../index.html">コンテンツ1</a></li>
+						<li><a href="../../index.html">コンテンツ2</a></li>
+						<li><a href="../../index.html">コンテンツ3</a></li>
+						<li><a href="../../index.html">コンテンツ4</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</section>
+
+
+		<!-- ドキュメントリンク -->
+		<section class="copyright">
+
+			<ul>
+				<li><a href="../../index.html">プライバシーポリシー</a></li>
+				<li><a href="../../index.html">サイトマップ</a></li>
+			</ul>
+
+			<p><a href="../../index.html">Copyright© momomo Inc. All Rights Reserved.</a></p>
+
+		</section>
+
+
+	</footer>
+	
+	<!-- //// FOOTER END //// -->
+
+		
+	<!-- ページトップスクロール -->
+	<div id="pageup">
+		<a href="#top"><img src="../../assets/img/common/arrow/pageup.svg" alt="ページトップ"></a>
+	</div>
+
+
+</div>
+
+<!-- //// ALL END //// -->
+
+
+<div id="ie_container"><div class="cover"><p>ページを表示できません。<br>このサイトは、最新のブラウザでご覧ください。</p></div></div>
+
+</body>
+</html>

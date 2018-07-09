@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+// ------------ FOOTER ------------*/
+
+footer {
+	width: 100%;
+	padding: 50px 0;
+	margin: auto;
+	background-color: $main-color;
+	text-align: center;
+
+	@include mq() {
+		padding: 50px 0 30px;
+	}
+
+	// Logo
+	div.logo {
+		padding: 0;
+		
+		img {
+			width: 80%;
+			max-width: 100px;
+			height: auto;
+			margin: auto;
+		}
+	}
+	
+	a {
+		@include link-color(#fff);
+
+		&:hover {
+			text-decoration: underline !important;
+		}
+	}
+	
+	// サイトマップ
+	section.sitemap {
+		margin: auto;
+		padding: 20px 0;
+		width: $width-wraper;
+		border-bottom: 1px solid #fff;
+
+		@include mq() {
+			width: 95%;
+		}
+
+		ul {
+			text-align:left;
+			letter-spacing: -.40em;
+
+			// 項目名
+			h2 {
+				padding: 0 0 5px 0;
+				font-weight: bold;
+
+				a {
+					
+					span {
+						padding: 2px 25px 2px 0;
+						background-image: url(../img/common/arrow/arrow_right_w.svg);
+						background-size: 15px 15px;
+						background-position: right center;
+						background-repeat: no-repeat;
+						display: inline-block;
+						@extend .font_size_14;
+					}
+				}
+			}
+
+			li {
+				// レイアウト
+				&.frame {
+					width: 25%;
+					display:inline-block;
+					vertical-align:top;
+					letter-spacing: normal;
+					padding: 0 20px;
+
+					@include mq(sp) {
+						width: 100%;
+						padding: 25px 0;
+					}
+
+
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+
+					& +li {
+						//border-left: $border-color 1px solid;
+						
+						@include mq() {
+							border-left: none;
+						}
+						
+						@include mq(sp) {
+							border-top: $border-color 1px solid;
+						}
+					}
+
+					ul {
+						li {
+							letter-spacing: normal;
+							padding: 2px 0;
+							@extend .font_size_12;
+
+							a {
+								color: #fff;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// ドキュメントリンク
+	section.copyright {
+		margin-top: 0;
+		padding: 20px 0;
+
+		@include mq() {
+			padding: 20px 0 0!important;
+		}
+
+
+		ul {
+			width: 100%;
+			text-align: center;
+			margin: auto;
+
+			li {
+				display: inline-block;
+				padding: 0 10px;
+				font-weight: bold;
+				color: #fff;
+				@extend .font_size_12;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
+
+				@include mq(sp) {
+					padding: 0 5px;
+				}
+			}
+		}
+		
+		p {
+			font-weight: bold;
+			@extend .font_size_12;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}

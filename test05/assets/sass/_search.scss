@@ -1,0 +1,353 @@
+
+
+//詳細検索のセクション
+.content_search_detail {
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+
+  @extend %clearfix;
+
+  @include mq(sp) {
+    padding: 50px 0;
+  }
+
+  .inner {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+    @include mq(sp) {
+      width: 100%;
+    }
+
+    h2 {
+      text-align: left;
+      font-weight: bold;
+      margin: 0 auto 10px;
+      padding: 5px 0 5px 10px;
+      border-left: 5px solid $main-color;
+    }
+  }
+
+  input[type="checkbox"] + label {
+    margin: 0 ;
+  }
+
+  article {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid $box;
+
+    @include mq(sp) {
+      padding: 15px 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .check_box {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    @include mq() {
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      float: inherit;
+      padding: 5px;
+    }
+
+
+    article {
+      text-align: right;
+
+      h3 {
+        font-weight: bold;
+        padding: 0 10px 0 60px;
+        width: auto;
+        text-align: left;
+        float: left;
+
+        @include mq() {
+          padding: 0 10px 0 50px;
+        }
+
+        @include mq(sp) {
+          padding: 0 10px 0 50px;
+        }
+      }
+    }
+
+
+    .set_list {
+      width: 95%;
+      margin: auto;
+      padding: 15px 0 0 0;
+      font-weight: bold;
+      @extend %clearfix;
+
+      >li {
+        width: 100%;
+        float: left;
+        border: #FFF 1px solid;
+        padding: 10px;
+        background-color: $box;
+        @include radius(5);
+        text-align: right;
+        position: relative;
+
+        h4 {
+          float: left;
+          border-left: none;
+          padding: 0 10px 0 60px;
+
+          @include mq() {
+            padding: 0 10px 0 50px;
+          }
+
+          @include mq(sp) {
+            padding: 0 10px 0 40px;
+          }
+        }
+      }
+
+      .area_list {
+        width: 100%;
+        //margin: 20px auto;
+        padding: 15px 0 0 0;
+        font-weight: bold;
+
+        >li {
+          width: 25%;
+          float: left;
+          text-align: left;
+          padding: 10px;
+          border: #ddd 1px solid;
+          background-color: #fff;
+          @include radius(5);
+          @extend %clearfix;
+
+          @include mq() {
+            width: 33.3%;
+          }
+          @include mq(sp) {
+            width: 100%;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+
+    // 全て選択
+    .target {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0 0 10px;
+      margin: 0 30px 0 0;
+      text-align: left;
+
+      @include mq() {
+        margin: 0 10px 0 0;
+      }
+
+      @include mq(sp) {
+        padding: 0 0 0 8px;
+      }
+
+      input[type="radio"] + label,
+      input[type="radio"]:checked + label,
+      input[type="checkbox"] + label,
+      input[type="checkbox"]:checked + label {
+        @extend .font_size_14;
+        font-weight: bold;
+        color: $main-color;
+      }
+
+      input[type="radio"] + label,
+      input[type="checkbox"] + label {
+        padding: 0 0 0 25px;
+        margin: 0;
+        color: #A4A4A4;
+      }
+    }
+
+  }
+}
+
+// //詳細検索のセクション - アコーディオン形式
+.accordion {
+
+  // アコーディオンスイッチ
+  .open {
+    display:inherit;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    background-image: url(../img/common/arrow/arrow_open.svg);
+    background-position: center center;
+    background-size: 25px 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    @include radius(3);
+
+    @include mq() {
+      width: 30px;
+      height: 30px;
+      background-size: 20px 20px;
+    }
+
+    @include mq(sp) {
+      top: 13px;
+      left: 10px;
+    }
+  }
+
+
+  // アコーディオンスイッチ
+  .close {
+    background-image: url(../img/common/arrow/arrow_close.svg);
+    background-position: center center;
+    background-size: 25px 25px;
+
+    @include mq() {
+      background-size: 20px 20px;
+    }
+  }
+
+  // アコーディオンスイッチ
+  .area_open {
+    display:inherit;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    background-image: url(../img/common/arrow/arrow_open.svg);
+    background-position: center center;
+    background-size: 25px 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    @include radius(3);
+
+    @include mq() {
+      width: 30px;
+      height: 30px;
+      background-size: 20px 20px;
+    }
+
+    @include mq(sp) {
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+
+  // アコーディオンスイッチ
+  .area_close {
+    background-image: url(../img/common/arrow/arrow_close.svg);
+    background-position: center center;
+    background-size: 25px 25px;
+
+    @include mq() {
+      background-size: 20px 20px;
+    }
+  }
+
+  // チェックボックスのレイアウト - デフォルトでは閉じてる
+  .set_list {
+    display: none;
+    text-align: left;
+  }
+
+  .area_list {
+    display: none;
+    text-align: left;
+  }
+
+  .transmission {
+    text-align: center;
+    margin: 20px auto 0;
+  }
+}
+
+
+section.front_search {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+
+  @extend %clearfix;
+
+  @include mq(sp) {
+    padding: 50px 0;
+  }
+
+
+  h1 {
+    text-align: center;
+    padding-top: 100px;
+    border-left: none;
+    padding-bottom: 20px;
+
+    span {
+      font-weight: bold;
+      background-image: url(../img/common/icon/icon_search.svg);
+      background-position: center top;
+      background-size: 70px 70px;
+      padding: 100px 20px 30px 20px;
+    }
+
+  }
+
+  .inner {
+    width: $width-wraper;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+
+    @include mq(sp) {
+      width: 100%;
+      padding: 20px;
+    }
+
+    h2 {
+      border-bottom: 1px solid $box;
+    }
+
+    .check_box {
+      padding-top: 0;
+    }
+
+    .check_list {
+      padding: 0 30px;
+
+      @include mq() {
+        padding: 0 10px;
+      }
+
+      li {
+        width: auto;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+// ------------ プログラムを探したい ------------
+

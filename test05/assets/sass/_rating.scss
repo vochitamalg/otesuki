@@ -1,0 +1,45 @@
+@charset "utf-8";
+/**
+ * Rating
+ */
+$rating-star-size: 16px;
+
+.rating {
+  display: inline-block;
+  position: relative;
+  width: $rating-star-size * 5;
+  height: $rating-star-size;
+  font-size: $rating-star-size;
+
+  &:before, &:after {
+    letter-spacing: 0;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: '★★★★★';
+    display: inline-block;
+    height: $rating-star-size;
+    line-height: $rating-star-size;
+  }
+  &:before {
+    color: #ddd;
+    width: $rating-star-size * 5;
+  }
+  &:after {
+    color: $sub-color;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.rating00:before{ display: none; }
+.rating00:after{ display: none; }
+.rating05:after{ width: $rating-star-size / 2; }
+.rating10:after{ width: $rating-star-size; }
+.rating15:after{ width: $rating-star-size * 1.5; }
+.rating20:after{ width: $rating-star-size * 2; }
+.rating25:after{ width: $rating-star-size * 2.5; }
+.rating30:after{ width: $rating-star-size * 3; }
+.rating35:after{ width: $rating-star-size * 3.5; }
+.rating40:after{ width: $rating-star-size * 4; }
+.rating45:after{ width: $rating-star-size * 4.5; }
+.rating50:after{ width: $rating-star-size * 5; }

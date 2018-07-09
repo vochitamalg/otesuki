@@ -1,0 +1,364 @@
+
+.right {
+   text-align: right;
+}
+.btn {
+    transition: 0.5s;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      transition: 0.5s;
+      text-decoration: none;
+    }
+
+  &.mini {
+    padding: 0 10px;
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+
+    @include mq(sp) {
+      width: 100px;
+    }
+  }
+
+
+
+  &.small {
+      padding: 0 10px;
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+
+      @include mq(sp) {
+        width: 100px;
+      }
+
+      &.border {
+        line-height: 32px;
+      }
+    }
+
+
+    &.medium {
+      padding: 0 10px;
+      width: 330px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 18px;
+
+      @include mq() {
+        width: 80%;
+        padding: 0 10px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+        padding: 0 10px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+
+      }
+    }
+
+    &.big {
+      padding: 0 10px;
+      width: 400px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 20px;
+
+      &.border {
+        line-height: 72px;
+      }
+
+      @include mq(sp) {
+        width: 240px;
+        padding: 0 10px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+
+        &.border {
+          line-height: 42px;
+        }
+      }
+
+    }
+
+    &.blue {
+      transition: 0.5s;
+      background-color: $accent-color;
+      box-shadow: inset 0 0 0 4px $accent-color, 0 0 1px rgba(0, 0, 0, 0);
+
+      &:hover {
+        color: $accent-color;
+        transition: 0.5s;
+        background-color: #fff;
+
+        span {
+          transition: 0.5s;
+          color: $accent-color;
+        }
+      }
+    }
+
+    &.green {
+      transition: 0.5s;
+      background-color: $main-color;
+      box-shadow: inset 0 0 0 4px $main-color, 0 0 1px rgba(0, 0, 0, 0);
+
+      &:hover {
+        color: $main-color;
+        transition: 0.5s;
+        background-color: #fff;
+
+        span {
+          transition: 0.5s;
+          color: $main-color;
+        }
+      }
+    }
+
+    &.yellow {
+      transition: 0.5s;
+      background-color: $sub-color;
+      box-shadow: inset 0 0 0 4px $sub-color, 0 0 1px rgba(0, 0, 0, 0);
+
+      &:hover {
+        color: $sub-color;
+        transition: 0.5s;
+        background-color: #fff;
+
+        span {
+          transition: 0.5s;
+          color: $sub-color;
+        }
+      }
+    }
+
+    &.border {
+      color: $main-color;
+      border: 4px solid $main-color;
+      background-color: transparent;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #fff;
+        opacity: 1;
+      }
+    }
+
+    &.search {
+      span {
+        color: #ffffff;
+        background-image: url(../img/common/icon/icon_search_w.svg);
+        background-position: left center;
+        background-size: 20px 20px;
+        padding: 5px 0 5px 30px;
+
+        &:hover {
+          background-image: url(../img/common/icon/icon_search_b.svg);
+        }
+      }
+    }
+
+    &.pen {
+      span {
+        color: #ffffff;
+        background-image: url(../img/common/icon/icon_pen_w.svg);
+        background-position: left center;
+        background-size: 20px 20px;
+        padding: 5px 0 5px 30px;
+      }
+
+      &.yellow {
+        &:hover {
+          span {
+            background-image: url(../img/common/icon/icon_pen_y.svg);
+          }
+        }
+      }
+
+      &.green {
+        &:hover {
+          span {
+            background-image: url(../img/common/icon/icon_pen.svg);
+          }
+        }
+      }
+    }
+
+    &.registration {
+
+      @include mq() {
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+      }
+
+      @include mq(sp) {
+        width: 100px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 10px;
+      }
+
+      span {
+        color: #ffffff;
+
+        @include mq() {
+          font-size: 16px;
+        }
+
+        @include mq(sp) {
+          font-size: 10px;
+          padding: 3px;
+        }
+
+
+      }
+    }
+  }
+
+  .flag {
+    color: #ffffff;
+    position: relative;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 300;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    &.normal {
+      padding: 0 20px;
+      width: auto;
+      font-size: 16px;
+
+      @include mq(sp) {
+        font-size: 12px;
+      }
+    }
+
+    &.big {
+      padding: 3px 20px;
+      width: auto;
+      font-size: 18px;
+      border-width: 3px !important;
+
+      @include mq(sp) {
+        font-size: 14px;
+      }
+    }
+
+    &.mini {
+      padding: 0 15px;
+      width: auto;
+      font-size: 14px;
+
+      @include mq(sp) {
+        font-size: 10px;
+      }
+    }
+
+    &.blue {
+      background-color: $accent-color;
+    }
+
+    &.green {
+      background-color: $main-color;
+    }
+
+    &.yellow {
+      background-color: $sub-color;
+    }
+
+    &.red {
+      background-color: $caution-color;
+    }
+
+    &.green_b {
+      line-height: 1.5;
+      color: $main-color;
+      background-color: #fff;
+      border: 2px solid $main-color;
+      box-sizing: border-box;
+    }
+
+    &.yellow_b {
+      line-height: 1.5;
+      color: $sub-color;
+      background-color: #fff;
+      border: 2px solid $sub-color;
+      box-sizing: border-box;
+    }
+
+  }
+
+  .helper_flag {
+    position: relative;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 300;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 3px solid $main-color;
+    box-sizing: border-box;
+    padding: 0 40px 0 20px;
+    font-size: 18px;
+    color: #000;
+
+    span{
+      background-image: url("../../assets/img/common/icon/icon_people.svg");
+      background-position: left center;
+      background-size: 18px 18px;
+      padding: 2px 0 2px 24px;
+    }
+  }
+
+  .requester_flag {
+    position: relative;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 300;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 3px solid $sub-color;
+    box-sizing: border-box;
+    padding: 0 40px 0 20px;
+    font-size: 18px;
+    color: #000;
+
+    span{
+      background-image: url("../../assets/img/common/icon/icon_people_y.svg");
+      background-position: left center;
+      background-size: 18px 18px;
+      padding: 2px 0 2px 24px;
+    }
+  }

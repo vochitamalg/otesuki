@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+// ------------ BASS ------------
+
+html,
+body {
+	width: 100%;
+	height: auto;
+	
+	// PC表示は幅を最低限固定
+	min-width: 1200px;
+	margin: auto;
+	letter-spacing: 1px;
+	
+	@include mq() {
+		min-width: 100%;
+		height: auto;
+	}
+}
+
+body {
+	font-family: $base-font-family;
+	color: $base-font-color;
+	@extend .font_size_20;
+}
+
+*:before, *:after {
+	box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+// ------------ BASS STYLE ------------
+
+// 選択テキストのカラー
+::selection { background: #ddd; color: #3a3a3a;; }
+::-moz-selection { background: #ddd; color: #3a3a3a;; }
+::-webkit-scrollbar {
+	display: none;
+}
+
+// リンク設定
+a {
+	@include link-color($color-link);
+	@extend .transitions;
+	
+	img {
+		@extend .transitions;
+	}
+	
+	&:hover{
+		text-decoration: underline;
+
+		@include mq() {
+			text-decoration: none;
+		}
+
+		img {
+			opacity: 0.5;
+		}
+	}
+}
+
+
+// 斜線
+hr {
+	height: 1px;
+	clear: both;
+	border: none;
+	border-top: $border-color 1px solid;
+	color: #FFF;
+}
+
+.hide_pc {
+	display: none;
+
+	@include mq() {
+		display: inherit;
+	}
+}
+
+
+.hide_sp {
+	display: inherit;
+
+	@include mq() {
+		display: none;
+	}
+}
+
+
+// clearfix
+%clearfix {
+	zoom:1;
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+.clearfix {
+	zoom:1;
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+// ブロック要素のリンク
+%a_block {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+// ベースのコンテンツ幅
+.wrapper {
+	width: 95%;
+	max-width: 1300px;
+	min-width: 1000px;
+	margin: auto;
+	position: relative;
+
+	// clearfix
+	@extend %clearfix;
+
+	@include mq() {
+		margin: 0 auto;
+		min-width: inherit;
+	}
+}
+
+
+// リンクエフェクト
+.transitions {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	
+	@include mq() {
+		transition: all 0s ease;
+		-webkit-transition: all 0s ease;
+		-moz-transition: all 0s ease;
+		-o-transition: all 0s ease;
+	}
+}
+
+// モーションエフェクト
+.all_transitions {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+}
+
+// 上下中央に配置
+.vertical {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+
+
+// ------------ BASS STYLE ------------
+
+
+// TABLE LAYOUT
+table {
+	width: 95%;
+	margin: auto;
+	border-collapse: collapse;
+	@extend .wrapper;
+	
+	tr {
+		
+		th,td {
+			
+			@media only screen and (max-width: 768px){
+				width: 100%;
+				display: block;
+			}
+		}
+
+		th {
+			// それぞれのセクションに記載。
+		}
+
+		td {
+			// それぞれのセクションに記載。
+		}
+	}
+}
+
+.green_text {
+	 color: $main-color;
+}
+
+.yellow_text {
+	color: $sub-color;
+}
